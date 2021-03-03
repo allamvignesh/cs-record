@@ -1,12 +1,10 @@
 f = open('Article.txt', 'r')
 
-lines = f.readlines()
+lines = f.read()
 count = 0
 
-for line in lines:
-    for word in line:
-        for letter in word:
-            if letter.isupper():
-                count += 1
+for letter in lines:
+    if letter.isupper():
+        count += 1
 
 print(count)
