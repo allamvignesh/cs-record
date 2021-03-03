@@ -1,4 +1,3 @@
-
 stack = [i for i in input('Enter string: ')]
 
 while len(stack) != 0:
@@ -6,4 +5,4 @@ while len(stack) != 0:
     if c == ' ':
         print(c,end='')
     else:
-        print(c*2,end='')
+        print(c*2,end=' ')

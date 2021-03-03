@@ -10,7 +10,7 @@ while s != 'e':
         else:
             stack.append(int(input('Enter element')))
     elif s == 'o':
-        if len(stack) < 1:
+        if len(stack) == 0:
             print('stack is empty')
         else:
             stack.pop()
