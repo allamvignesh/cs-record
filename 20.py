@@ -49,14 +49,15 @@ def delet(p,e):
 
 while s != 4:
 
-    e = input('Enter element : ')
-    p = input('Priority (Highest/ Normal/ Lower(H/N/L)): ')
-
     print('1.Insert Element\n2.Search for Element\n3.Change Priority\n4.Exit')
 
     s = int(input('select option: '))
 
+    if s !=4:
+        e = input('Enter element : ')
+
     if s == 1:
+        p = input('Priority (Highest/ Normal/ Lower(H/N/L)): ')
         if p == 'H':
             hf, hr = insert(e, hf, hr, HighestPr)
         if p == 'N':
